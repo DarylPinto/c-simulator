@@ -3,6 +3,7 @@
 //int main()
 //{
 
+
 		function findPrimeNumbersUnder(max_prime){
 
 			//First we define an empty array for our prime numbers. We will be adding values to this array later on.
@@ -38,11 +39,13 @@
 			return primes;
 		}
 
-		function splitArrayIntoColumns(arr, columns){
-			
-		}
+		var num;
 
-		printf(  findPrimeNumbersUnder(50)  );
+		printf('Enter a number:');
+		scanf('num');
+
+		printf(  findPrimeNumbersUnder(num)  );
+
 
 //  return 0;
 
