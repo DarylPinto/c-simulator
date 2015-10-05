@@ -6,13 +6,13 @@
 		function findPrimeNumbersUnder(max_prime){
 
 			//First we define an empty array for our prime numbers. We will be adding values to this array later on.
-			var primes = [];
+			var primes = [ ];
 			
 			//We'll run a for loop that starts at the number entered and runs all the way down until 0
 			for(var i = max_prime; i > 0; i--){
 				
 				//What  do all prime numbers have in common? They have only two factors. Now we have to create a new array that will hold the factors of the number we're currently testing.
-				var factors = [];
+				var factors = [ ];
 				
 				//Inside our for loop we need to create another for loop to test and see how many factors the number has
 				for(var j = i; j > 0; j--){
@@ -43,6 +43,10 @@
 		}
 
 		printf(  findPrimeNumbersUnder(50)  );
+
+		printf('How would you like your pancakes?');
+		scanf('a');
+
 
 //  return 0;
 
