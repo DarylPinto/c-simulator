@@ -44,10 +44,6 @@
 
 		printf(  findPrimeNumbersUnder(50)  );
 
-		printf('How would you like your pancakes?');
-		scanf('a');
-
-
 //  return 0;
 
 //}
