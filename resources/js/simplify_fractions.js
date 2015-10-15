@@ -18,9 +18,6 @@ function printSimplified(numerator, denominator){
 
 function main(){
 
-	var numerator;
-	var denominator;
-
 	printf('Please enter numerator:');
 	scanf('&numerator');
 	printf('Please enter denominator:');
