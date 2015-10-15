@@ -8,22 +8,27 @@ function getGCF(numerator, denominator){
 	return GCF;
 }
 
-function simplify(numerator, denominator){
+function printSimplified(numerator, denominator){
 	var GCF = getGCF(numerator, denominator);
 	var simplified_numerator = numerator / GCF;
 	var simplified_denominator = denominator / GCF;
 
-	return simplified_numerator.toString() + '/' + simplified_denominator.toString();
+	printf('The simplified fraction is: %d/%d', simplified_numerator, simplified_denominator);
 }
 
 function main(){
 
-	printf('Please enter numerator');
-	scanf('numerator');
-	printf('Please enter denominator');
-	scanf('denominator');
+	var numerator;
+	var denominator;
+
+	printf('Please enter numerator:');
+	scanf('&numerator');
+	printf('Please enter denominator:');
+	scanf('&denominator');
 
 	printf('The GCF is: %d', getGCF(numerator, denominator));
-	printf('The simplified fraction is: %s', simplify(numerator, denominator));
 
+	printSimplified(numerator, denominator);
+
+	return 0;
 }
