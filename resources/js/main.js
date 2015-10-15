@@ -17,10 +17,13 @@ function simplify(numerator, denominator){
 }
 
 function main(){
+
 	printf('Please enter numerator');
 	scanf('numerator');
 	printf('Please enter denominator');
 	scanf('denominator');
+
 	printf('The GCF is: %d', getGCF(numerator, denominator));
 	printf('The simplified fraction is: %s', simplify(numerator, denominator));
+
 }
